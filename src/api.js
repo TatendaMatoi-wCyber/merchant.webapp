@@ -11,7 +11,7 @@ const apiClient = axios.create({
 
 export const loginMerchant = async (email, password) => {
   try {
-    const response = await apiClient.post('/login', {
+    const response = await apiClient.post('/api/v1/login', {
       email,
       password,
     });
@@ -20,13 +20,13 @@ export const loginMerchant = async (email, password) => {
       refreshToken: response.data.refreshToken,
     };
   } catch (error) {
-    throw error; 
+    throw error;
   }
 };
 
 export const getTeaserOffer = async (amount, currency, token) => {
   try {
-    const response = await apiClient.get('/checkout/offers/default', {
+    const response = await apiClient.get('/api/v1/checkout/offers/default', {
       params: {
         PrincipalAmount: amount,
         CurrencyId: currency,
