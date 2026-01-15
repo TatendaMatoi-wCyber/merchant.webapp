@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const authenticateMerchant = async () => {
       try {
-        const { accessToken, refreshToken } = await loginMerchant('tatenda.ndasenda@gmail.com', 'Rttt+@74'); 
+        const { accessToken, refreshToken } = await loginMerchant('tatenda.ndasenda@gmail.com', 'Rttt+@74');
         setMerchantToken(accessToken);
         setRefreshToken(refreshToken);
       } catch (error) {
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <CartProvider merchantToken={merchantToken}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <main className="container mx-auto p-4">
           <Routes>
