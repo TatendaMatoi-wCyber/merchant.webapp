@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const authenticateMerchant = async () => {
       try {
-        const { accessToken, refreshToken } = await loginMerchant('tatenda.ndasenda@gmail.com', 'Rttt+@74');
+        const { accessToken, refreshToken } = await loginMerchant('farm@email.com', 'mmmmmmmm');
         setMerchantToken(accessToken);
         setRefreshToken(refreshToken);
       } catch (error) {
