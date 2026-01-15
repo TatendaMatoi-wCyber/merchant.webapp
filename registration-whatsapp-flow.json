@@ -1,0 +1,70 @@
+{
+    "screens": [
+      {
+        "data": {},
+        "id": "RECOMMEND",
+        "layout": {
+          "children": [
+            {
+              "children": [
+                {
+                  "type": "TextSubheading",
+                  "text": "Enter Your Identification Details"
+                },
+                {
+                  "input-type": "text",
+                  "label": "Full Name",
+                  "name": "fullName",
+                  "required": true,
+                  "type": "TextInput"
+                },
+                {
+                  "input-type": "text",
+                  "label": "Mobile",
+                  "name": "Mobile_41842f",
+                  "required": true,
+                  "type": "TextInput"
+                },
+                {
+                  "input-type": "text",
+                  "label": "Email",
+                  "name": "Email_a9606d",
+                  "required": true,
+                  "type": "TextInput"
+                },
+                {
+                  "input-type": "text",
+                  "label": "Address",
+                  "name": "Address_17b250",
+                  "required": true,
+                  "type": "TextInput"
+                },
+                {
+                  "label": "Continue",
+                  "on-click-action": {
+                    "name": "navigate",
+                    "next": {
+                      "name": "RATE",
+                      "type": "screen"
+                    },
+                    "payload": {
+                      "screen_0_Full_Name_0": "${form.Full_Name_8cc925}",
+                      "screen_0_Mobile_1": "${form.Mobile_41842f}",
+                      "screen_0_Email_2": "${form.Email_a9606d}",
+                      "screen_0_Address_3": "${form.Address_17b250}"
+                    }
+                  },
+                  "type": "Footer"
+                }
+              ],
+              "name": "flow_path",
+              "type": "Form"
+            }
+          ],
+          "type": "SingleColumnLayout"
+        },
+        "title": "Registration"
+      }
+    ],
+    "version": "7.3"
+  }
