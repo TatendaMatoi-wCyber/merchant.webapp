@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/merchant.webapp/static/css/main.1455a631.css",
-    "main.js": "/merchant.webapp/static/js/main.582f4a02.js",
+    "main.js": "/merchant.webapp/static/js/main.211d2a62.js",
     "index.html": "/merchant.webapp/index.html",
     "main.1455a631.css.map": "/merchant.webapp/static/css/main.1455a631.css.map",
-    "main.582f4a02.js.map": "/merchant.webapp/static/js/main.582f4a02.js.map"
+    "main.211d2a62.js.map": "/merchant.webapp/static/js/main.211d2a62.js.map"
   },
   "entrypoints": [
     "static/css/main.1455a631.css",
-    "static/js/main.582f4a02.js"
+    "static/js/main.211d2a62.js"
   ]
 }
