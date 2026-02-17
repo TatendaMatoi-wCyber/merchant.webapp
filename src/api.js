@@ -41,3 +41,22 @@ export const getTeaserOffer = async (amount, currency, token) => {
     throw error;
   }
 };
+
+export const initiateCheckoutSession = async (amount, currency, token, redirectUrl) => {
+  try {
+    const response = await apiClient.post('/api/v1/checkout/session/initiate', {
+      PrincipalAmount: amount,
+      CurrencyId: currency,
+      Token: token,
+      RedirectUrl: redirectUrl,
+    }, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    return response.data; // Expecting { checkoutUrl: "..." }
+  } catch (error) {
+    console.error('Failed to initiate checkout session:', error);
+    throw error;
+  }
+};

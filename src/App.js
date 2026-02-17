@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const authenticateMerchant = async () => {
       try {
-        const { accessToken, refreshToken } = await loginMerchant('farm@email.com', 'mmmmmmmm');
+        const { accessToken, refreshToken } = await loginMerchant('apitest@gmail.com', 'mmmmmmmm');
         setMerchantToken(accessToken);
         setRefreshToken(refreshToken);
       } catch (error) {
